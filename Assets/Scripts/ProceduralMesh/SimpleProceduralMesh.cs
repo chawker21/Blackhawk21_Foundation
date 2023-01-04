@@ -29,11 +29,21 @@ public class SimpleProceduralMesh : MonoBehaviour
             Vector3.zero, Vector3.back, Vector3.back
         };
         
+        
+        
         //add UV voordinates to apply texture to mesh
 
         mesh.uv = new Vector2[]
         {
             Vector2.zero, Vector2.right, Vector2.up
+        };
+        
+        // adjust the mesh tangents to get proper texture lighting from the normal mapping
+        mesh.tangents = new Vector4[]
+        {
+            new Vector4(1f, 0f, 0f, -1f),
+            new Vector4(1f, 0f, 0f, -1f),
+            new Vector4(1f, 0f, 0f, -1f)
         };
 
         //single triangle defined with three indices
