@@ -21,6 +21,20 @@ public class SimpleProceduralMesh : MonoBehaviour
         {
             Vector3.zero, Vector3.right, Vector3.up
         };
+        
+        //add a Vector 3 array to the normals property of the mesh to adjust the normals pointing back instead of the default foward
+        //which makes it look like light is coming from behind by default.
+        mesh.normals = new Vector3[]
+        {
+            Vector3.zero, Vector3.back, Vector3.back
+        };
+        
+        //add UV voordinates to apply texture to mesh
+
+        mesh.uv = new Vector2[]
+        {
+            Vector2.zero, Vector2.right, Vector2.up
+        };
 
         //single triangle defined with three indices
         mesh.triangles = new int[]
