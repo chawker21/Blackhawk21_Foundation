@@ -15,6 +15,21 @@ public class SimpleProceduralMesh : MonoBehaviour
         {
             name = "Procedural Mesh"
         };
+
+        //Creates vertices for single Isosceles right triangle that lies on the xyplane with it's corner 90 degree to the origin
+        mesh.vertices = new Vector3[]
+        {
+            Vector3.zero, Vector3.right, Vector3.up
+        };
+
+        //single triangle defined with three indices
+        mesh.triangles = new int[]
+        {
+            //default this triangle is only seen by turning it around, 0, 1, 2, is counterclockwise 
+            //0, 2, 1 turns the face to the camera.
+            //0, 1, 2
+            0, 2, 1
+        };
         
         //Assign name to the mesh property of the meshFilter Component
         GetComponent<MeshFilter>().mesh = mesh;
