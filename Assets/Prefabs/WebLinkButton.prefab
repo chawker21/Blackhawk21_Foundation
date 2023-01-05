@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 1825166218595018114}
   - component: {fileID: 1825166218595018117}
   - component: {fileID: 1825166218595018116}
+  - component: {fileID: -2743807606727947236}
   m_Layer: 5
   m_Name: WebLinkButton
   m_TagString: Untagged
@@ -257,3 +258,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-2743807606727947236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825166218595018119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f301965a79f12174a8f143b3486d4ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeedX: 5
+  rotationSpeedY: 5
+  rotationSpeedZ: 5
